@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body {
+  font-family: times new roman;
+  font-size: 17px;
+  padding: 8px;
+  text-transform: capitalize;
+  background-color:#e6e6fa;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+.container {
+  background-color: #f2f2e2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+input[type=text] {
+  width: 80%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+}
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+.btn:hover {
+  background-color:blue;
+}
+.i:hover{
+	opacity: 0.5;
+}
+img{
+
+}
+</style>
+</head>
+
+<div align="center">
+<body>
+  
+<div class="row" align="center">
+  <div class="col-75" align="center">
+    <div class="container">
+        <div class="row">
+          <div class="col-50">
+            <h3>Bill Address</h3>
+            <label> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Joe">
+            <label> Email</label>
+            <input type="text" id="email" name="email" placeholder="abc@example.com">
+            <label> Address</label>
+            <input type="text" id="adr" name="address" placeholder="xyz Street">
+            <label> City</label>
+            <input type="text" id="city" name="city" placeholder="mumbai">
+            <div class="row">
+              <div class="col-50">
+                <label>State</label>
+                <input type="text" id="state" name="state" placeholder="maharashtra">
+              </div>
+              <div class="col-50">
+                <label>Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="193833">
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label>Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Joe">
+            <label>Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="0000-0000-0000-0000" maxlength="12">
+            <label>Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="NOV" maxlength="3">
+            <div class="row">
+              <div class="col-50">
+                <label>Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2020" maxlength="4">
+              </div>
+              <div class="col-50">
+                <label>CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="123" maxlength="3">
+              </div>
+            </div>
+          </div>
+        </div>
+        <label>
+          <div align="center">
+          <input type="checkbox" checked="checked"> Shipping address same as billing
+        </label>
+      </div>
+        <button onclick="a()" style="width: 30%" class="btn">PAY</button>
+        
+      </form>
+    </div>
+  </div>
+  <fieldset style="border: none;">
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p><b>OR</b></p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+</fieldset>
+
+<fieldset style="background-color:#306eff; height: 20%; padding: none">
+</body>
+<h3>scan to download app</h3>
+<img src="qrcode.svg">
+<h3>AND PAY USING</h3>
+<h3><a href="http:tiny.cc/v0t1tz" class="i"><img src="Google pay.jpg" height="50px" width="200px"></a></h3>
+<h4 style="font-size: 20px;">use code</h4>
+<h4 style="color: yellow; background-color: grey; font-size: 20px;">MYHEALTHGPAY675</h4>
+<h4>to get 5% cashback </h4>
+<h4>valid till 1 DEC</h4>
+</fieldset>
+<fieldset style="height: 20%; border: none;"></fieldset>
+
+<fieldset style="background-color:lightblue; height: 20%;%">
+<h3>scan to download app</h3>
+<img src="paypalmyhealthplaystore.jpeg">
+<h3>AND PAY USING</h3>
+<h3><a href="https://www.paypal.com/signin" class="i"><img src="paypal.jpg" height="50px" width="150px"></a></h3>
+<h4 style="font-size: 20px;">use code</h4>
+<h4 style="color: yellow; background-color: grey; font-size: 20px;">MYHEALTHPAY89</h4>
+<h4>to get 5% discount</h4>
+<h4>valid till 30 NOV</h4>
+
+
+</fieldset>
+
+<script>
+  function a(){
+    confirm("make Payment?");
+  }
+</script>
+</div>
+</fieldset>
+</html>
+<fieldset style="background-color: lightgrey;"><b>TERMS AND CONDITIONS</b></fieldset>
+<fieldset style="text-align: left;">
+  <ul style="">
+	<li>to pay Via app user needs to have updated version of the given app</li>
+	<li>payment once done cannot be refunded</li>
+	<li>MYHealth is not responsible for any invalid transcstions in case of serious problem you can contact us at <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" style="text-decoration: none; text-transform: none;">myhealth.org.in@gmail.com</a></li>
+	<li>code given by MYhealth are valid to use we do not use illegal code</li>
+	<li>codes are valid till 15 days since issued on website</li>
+	<li>MYhealth is not resposible of collecting data of users while entering card details</li>
+	<li>MYhealth is not respossible for any kind of cybersecurity attacks</li>
+	<li>incase of transaction failure you can quit site or visit our <a href="FAQ'S.html" style="text-decoration: none;">FAQ'S</a></li>
+<li>MYHeath is not resposibile for any payment transaction handled by GOOGLE PAY OR PAYPAL</li>
+	<li>users purchasing thing from MYHealth will be charged 1-5% for taxes (depending on region,provinces you stay)</li>
+	<li>International users purchasing thing from MYHealth will be charged 5% for services and tax</li>
+	<li>Service and products may differ depending on your region, provinces you stay</li>
+</ul>
+</fieldset>
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my account settings</title>
+</head>
+<style>
+	*{
+		text-transform: capitalize;
+		padding: 10px;
+
+	}
+	input{
+		width: 30%;
+	}
+	input[type=text]{
+		border-radius: 30px;
+		border: 1px solid #aaaaaa;
+	}
+	input[type=password]{
+		border-radius: 30px;
+		border: 1px solid #aaaaaa;
+	}
+</style>
+</script>
+<script type="text/javascript">
+  var check = function() {
+  if (document.getElementById('password').value == document.getElementById('repeat_password').value)
+  {
+    document.getElementById('pswd').style.color = 'green';
+    document.getElementById('pswd').innerHTML = 'Password Matched';
+  } else {
+    document.getElementById('pswd').style.color = 'red';
+    document.getElementById('pswd').innerHTML = 'Password Mismatch';
+  }
+}
+</script>
+<body style="background-color: lightgrey;">
+	<div align="center">
+	<img src="OIP.iTmvIpjb3T_2A9PToCYzUwAAAA.jpeg" height="90px" width="90px"></div>
+	<h1>change your personal information</h1>
+	<br>
+	<label>name:</label>
+	<br>
+	<input type="text" >
+	<br>
+	<label>email:</label>
+	<br>
+	<input type="text" >
+	<br>
+	<label>phone no:</label>
+	<br>
+	<input type="text" >
+	<br>
+	<label>country:</label>
+	<br>
+	<input type="text" >
+	<br>
+	<label>state:</label>
+	<br>
+	<input type="text" >
+	<br>
+	<br>
+	<h1>change password</h1>
+	<label>current password:</label>
+	<br>
+	<input type="text" placeholder="your current password" >
+	<br>
+	<label>New Password</label><br>
+      <input name="password" id="password" type="password" placeholder="Password" required="password" onkeyup='check();'/>
+      </label>
+	<br>
+	<label>Repeat password</label><br>
+      <input type="password" name="repeat_password" id="repeat_password" placeholder="Repeat Password" required="password" onkeyup='check();'/><br><br>
+      <span id='pswd'></span><br><br>
+	<button>save password</button>
+</body>
+</html>

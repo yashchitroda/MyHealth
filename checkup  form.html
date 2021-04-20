@@ -1,0 +1,227 @@
+<html>
+<head>
+    <style type="text/css">
+        *{
+            font-size: 20px;
+        }
+         a{
+        text-decoration: none;
+        color: black;
+      }
+      body{
+    background-color: #d3d3d3;
+}
+
+    </style>
+  
+    <body>
+    
+</head>
+
+
+<p><a href="contactus.html"><--</a>
+    <a href="mainpage1.html">HOME</a>
+    <a href="login.html">--></a>
+</p>
+<fieldset>
+    <legend>
+        Personal Information
+    </legend>
+    <form id="dob" type="dob">
+        <div> <label>NAME:</label>
+            <input type="text" placeholder="First Name"> <input type="text" placeholder="Last Name">
+            <br>
+            <br>
+            <label>AGE:</label>
+            <input type="number" min="1" max="100">
+            <br>
+            <br>
+            <label>D.O.B</label>
+            <input type="date"><br><br> <label>Phone No:</label>
+            <input type="text" placeholder="91-XXXXXXXXXX">
+
+            <br>
+            <br>
+
+
+            <label>Email:</label>
+            <input type="text" placeholder="abc@gmail.com">
+
+            <br>
+            <br>
+
+
+            <label for="Adress">Address:</label>
+            <textarea id="address" name="address" rows="4" cols="50" minlength="25" maxlength="200">
+    </textarea>
+
+            <br><br>
+
+
+            <label>Gender</label>
+            <br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="male">Female</label>
+            <br>
+
+            <br>
+            <br>
+            <fieldset>
+                <legend> Medical Information</legend>
+                <form>
+                    <label>
+        <h4>Past Disease</h4>
+                    <input type="checkbox"><label>Blood pressure</label><br>
+                    <input type="checkbox"><label>Diabeties</label><br>
+                    <input type="checkbox"><label>Obesity</label><br>
+                    <input type="checkbox"><label>Heart issue</label><br>
+                    <input type="checkbox"><label>Phobia</label><br>
+                    <input type="checkbox"><label>Any kind of Allergies</label><br>
+
+
+
+                </form>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend><strong>Body Measurement</strong></legend>
+                <form>
+                    <h5><i>Make sure you stand straight</i></h5>
+                    
+            <input type="number" min="12" max="84"><label> Inches</label><br>
+            <br>
+            <input type="number" min="1" max="200" required=""><label> Kg</label>
+            <br><br>                
+        </form>
+            </fieldset><br>
+            <fieldset>
+                <legend>Current Symptom's</legend>
+                <h4>What is your Main Symptom?</h4>
+                <input type="checkbox"><label>Headache</label><br>
+                <input type="checkbox"><label>Nausea</label><br>
+                <input type="checkbox"><label>Fever</label><br>
+                <input type="checkbox"><label>Dizziness</label><br>
+                <input type="checkbox"><label>Fatigue</label><br><br>
+                <textarea name="Symptom" id="Symptom" placeholder="Any other Symptoms" cols="25" rows="3"></textarea>
+            </fieldset>
+            
+
+
+
+
+            
+ <!--
+Day
+<select name='day' id='dayddl'>
+<option value='1'>1</option>
+<option value='2'>2</option>
+<option value='3'>3</option>
+<option value='4'>4</option>
+<option value='5'>5</option>
+<option value='6'>6</option>
+<option value='7'>7</option>
+<option value='8'>8</option>
+<option value='9'>9</option>
+<option value='10'>10</option>
+<option value='11'>11</option>
+<option value='12'>12</option>
+<option value='13'>13</option>
+<option value='14'>14</option>
+<option value='15'>15</option>
+<option value='16'>16</option>
+<option value='17'>17</option>
+<option value='18'>18</option>
+<option value='19'>19</option>
+<option value='20'>20</option>
+<option value='21'>21</option>
+<option value='22'>22</option>
+<option value='23'>23</option>
+<option value='24'>24</option>
+<option value='25'>25</option>
+<option value='26'>26</option>
+<option value='27'>27</option>
+<option value='28'>28</option>
+<option value='29'>29</option>
+<option value='30'>30</option>
+<option value='31'>31</option>
+</select>
+
+Month
+<select name='month'>
+<option value='1'>1</option>
+<option value='2'>2</option>
+<option value='3'>3</option>
+<option value='4'>4</option>
+<option value='5'>5</option>
+<option value='6'>6</option>
+<option value='7'>7</option>
+<option value='8'>8</option>
+<option value='9'>9</option>
+<option value='10'>10</option>
+<option value='11'>11</option>
+<option value='12'>12</option>
+</select>
+
+Year
+
+<select name='day'>
+
+<option>1972</option>
+<option>1973</option>
+<option>1974</option>
+<option>1975</option>
+<option>1976</option>
+<option>1977</option>
+<option>1978</option>
+<option>1979</option>
+<option>1980</option>
+<option>1981</option>
+<option>1982</option>
+<option>1983</option>
+<option>1984</option>
+<option>1985</option>
+<option>1986</option>
+<option>1987</option>
+<option>1988</option>
+<option>1989</option>
+<option>1990</option>
+<option>1991</option>
+<option>1992</option>
+<option>1993</option>
+<option>1994</option>
+<option>1995</option>
+<option>1996</option>
+<option>1997</option>
+<option>1998</option>
+<option>1999</option>
+<option>2000</option>
+<option>2001</option>
+<option>2002</option>
+<option>2003</option>
+<option>2004</option>
+<option>2005</option>
+<option>2006</option>
+<option>2007</option>
+<option>2008</option>
+<option>2009</option>
+<option>2010</option>
+<option>2011</option>
+<option>2012</option>
+<option>2013</option>
+<option>2014</option>
+<option>2015</option>
+<option>2016</option>
+<option>2017</option>
+<option>2018</option>
+<option>2019</option>
+<option>2020</option>
+</form>
+</fieldset>
+-->
+            <br><br><input type="submit" align="center">
+
+</html>

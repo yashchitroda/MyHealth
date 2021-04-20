@@ -1,0 +1,104 @@
+<html>
+<head>
+<body>
+
+	  <p align="left"><a href=""><--</a>
+    <a href="mainpage1.html">| Home |</a>
+    <a href="">--></a>
+    
+</head>
+<style>
+body {
+  background-image:url('67379785-stock-vector-medical-good-team-hospital-staff-doctors-and-nurse-vector-illustration-removebg-preview.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color:black;
+  color: white;
+}
+  *{
+    padding:10px;
+    text-decoration: none;
+  }
+  body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+   padding:10px;
+}
+
+form{
+  text-align: center;
+}
+div{
+  text-align: center;
+}
+h1{
+  color: lightblue;
+
+}
+p,h3{
+  text-transform: capitalize;
+  text-shadow: 2px;
+}
+fieldset{
+  border:1px solid green;
+}
+
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
+   
+<div align="center">
+  <fieldset >
+  <form class="modal-content animate" action="/login.php" method="post">
+    <h1 align = "center">LOGIN TO MYHEALTH</h1>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" name="name" style="border-radius: 30px;" placeholder="Enter Username" name="uname" required>
+      <br>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" style="border-radius: 30px;" placeholder="Enter Password" name="psw" id="input" required>
+      <br>
+      <br>
+      <input type="checkbox" onclick="myFunction0()">Show Password</input>
+      </div>
+    </form>
+      <button onclick ="document.location='generateopt.html'" type="submit" style="background-color: lightgreen; border-radius: 30px;">NEXT></button> <button onclick ="document.location='login.html'"style="background-color: red; border-radius: 30px; ">Cancel</button>
+      <label>
+        <br>
+        <br>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      <br>
+      <br>
+      <span class="psw"> <a href="forgotpassword.html">Forgotpassword?</a></span>
+      <span class="psw"> <a href="create acc.html">Create Account</a></span>
+  
+</div>
+</fieldset>
+<script>
+function myFunction0() {
+   var x = document.getElementById("input");
+   if(x.type === "password"){
+   	x.type = "text";
+   }
+   else{
+   	x.type = "password";
+   }
+}
+</script>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+<button onclick="myFunction()" style="border-radius: 30px;">CHANGE THEME</button>
+</body>
+</html>

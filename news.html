@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {box-sizing: border-box;
+text-transform: capitalize;}
+body {font-family: Verdana, sans-serif;
+background-color:lightcyan;}
+.mySlides {display: none;}
+img {
+  vertical-align: middle;
+}
+
+#first,#second,#third {display: none;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.active {
+  background-color: #717171;
+}
+a{
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+  <p align="left"><a href=""><--</a>
+    <a href="mainpage1.html">| Home |</a>
+    <a href="">--></a>
+<h2 align="center" style="font-size:40px">NEWS</h2>
+<h3 style="text-align: center; font-size: 30px;">From myhealth</h3>
+<div align="center">
+<img src="OIP.-DWVkOAaX9ti55qwU2ht_AAAAA.jpeg" height="90px" width="90px">
+</div>
+<br>
+
+<div align="center">
+<fieldset style="background-color: black; width: 40%; text-align: center;">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="mm6920e1_VaccinationCoverageMichiganCOVID19_IMAGE_18May20_1200x675-medium.jpg" height="500px" width="1000px">
+</div>
+
+<div class="mySlides fade">
+  <img src="Global_Examples_of_Emerging_and_Re-Emerging_Infectious_Diseases.jpg" height="500px" width="1000px">
+</div>
+
+<div class="mySlides fade">
+  <img src="Unknown-4.jpeg" height="500px" width="1000px">
+</div>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  </div>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2500); // Change image every 2.5 seconds
+}
+</script>
+</fieldset>
+<hr style="color: yellow;">
+<br>
+<br>
+<h1><marquee scrollamount = "15px"> stay updated with all the Global - News</marquee></h1>
+<h1 style="color:#aa0000;"><marquee scrollamount = "10px" direction="right">Human life in danger</marquee></h1>
+<h1 style="text-align: center; color: red;"><marquee scrollamount = "20px" direction = "up"><b>virus outbreak alert</b></marquee></h1>
+
+
+<fieldset style="background-color: black;">
+
+
+<div align="center">
+<img src="20201001_figure_1.1.png">
+</div>
+<h1 class="ml3" align="center" style="color: red;">Outbreak</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<style type="text/css">
+.ml3 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+</style>
+
+<script type="text/javascript">
+  
+
+  var textWrapper = document.querySelector('.ml3');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml3 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 550,
+    delay: (el, i) => 150 * (i+1)
+  }).add({
+    targets: '.ml3',
+    opacity: 0,
+    duration: 400,
+    easing: "easeOutExpo",
+    delay: 500
+  });
+</script>
+<div align="center">
+<fieldset style="width: 65%; background-color: black; color: white">
+<h2 style="color: orange;"><marquee>Monkeypox - Democratic Republic of the Congo</marquee></h2>
+<br>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#showless").click(function(){
+    $("#first").hide();
+  });
+  $("#showmore").click(function(){
+    $("#first").show();
+  });
+});
+</script>
+<p>From 1 January through 13 September 2020, a total of 4,594 suspected cases of monkeypox, including 171 deaths (case fatality ratio 3.7%), have been reported in 127 health zones from 17 out of 26 provinces in the Democratic Republic of the Congo. The first epidemic peak was observed at the beginning of March 2020 (epi week 10), with 136 cases reported weekly (Figure1). From 1 January through 7 August, the Institut National de Recherche Biomédicale (INRB) received 80 samples from suspected cases of monkeypox, of which 39 samples were confirmed positive by polymerase chain reaction. Four out of the 80 specimens were skin lesions (crusts/vesicles), the remaining samples were blood. There is no further information at this time regarding the outcome of these 80 patients whose samples were tested. Confirmatory testing remains ongoing.
+
+During the same period in 2019, 3,794 suspected cases and 73 deaths (CFR 1.9%) were reported in 120 health zones from 16 provinces while a total of 2,850 suspected cases (CFR 2.1%) were reported in 2018.</p>
+
+
+<p id="first">
+The provinces reporting the highest number of suspected cases include Sankuru with 973 (21.2%) suspected cases, Mai-Ndombe with 964 (21%) suspected cases, Equateur with 586 (12.8%) suspected cases, Tshuapa with 520 (11.3%) suspected cases and Mongala with 518 (11.3%) suspected cases (Figure 2). From 1 January to 13 September, Kwilu province is reporting the highest case fatality ratio of 16.7% (1 death/6 suspected cases), followed by Tshopo 8.1% (17 deaths/211 suspected cases), and Mai-Ndombe 7.8% (75 deaths/964 suspected cases).
+
+Active outbreaks in Mai-Ndombe province (located south of Equateur province, in the north west side of the country) have been reported since January 2020. The outbreak in Inongo health zone (Mai-Ndombe province) is one of the most concerning outbreaks where one-fourth of its territory is affected. This outbreak has been ongoing since June 2020, comprising 65% of the total number of suspected cases with an estimated case fatality ratio of 10%. Moreover, Inongo health zone borders Bikoro health zone (Equateur province); Equateur province is the location of the current Ebola outbreak, and now also a monkeypox outbreak.
+
+Within the Democratic Republic of the Congo, majority of suspected cases (58%) are above the age of five; however, the case fatality ratio for children under the age of five is higher at 4.2% (80 deaths/1,907 suspected cases) as compared to 3.4% in cases over the age of five (91 deaths/2,687 suspected cases).
+Monkeypox cases were reported in health zones which are also experiencing multiple disease outbreaks, including measles, polio due to cVDPV, malaria, cholera, and COVID-19, in addition to an ongoing Ebola virus disease outbreak in Equateur Province which continues to experience armed conflict and violence. The security situation in the Democratic Republic of the Congo remains unstable, further disrupting surveillance efforts and response activities. Affected regions for this outbreak continue to experience armed conflict and population displacements.
+
+Potential exposure might be linked to proximity to the forest with many possible animal reservoirs, including for hunting activities.
+<br>
+With global circulation of the virus causing COVID-19 and ongoing insecurity in the region, there is a risk of disruption of access to health care due to the COVID-19 related burden on the health system. As of 16 September 2020, a total of 10,401 cases of COVID-19 including 267 deaths were reported in the DRC.
+</p>
+<button id="showless">Show Less</button>
+<button id="showmore">Show More</button>
+
+</fieldset>
+
+<br>
+<br>
+<h1 class="ml3" align="center" style="color: red;">virus alert</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<style type="text/css">
+.ml3 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+</style>
+
+<script type="text/javascript">
+  
+
+  var textWrapper = document.querySelector('.ml3');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml3 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 550,
+    delay: (el, i) => 150 * (i+1)
+  }).add({
+    targets: '.ml3',
+    opacity: 0,
+    duration: 400,
+    easing: "easeOutExpo",
+    delay: 500
+  });
+</script>
+<div align="center">
+<img src="images.jpeg" height="400px" width="650px">
+</div>
+<br>
+<div align="center">
+<fieldset style="width: 65%; background-color: black;">
+<h2 style="color:#ef5455;"> <marquee>Ebola virus disease</marquee></h2>
+<br>
+<script>
+$(document).ready(function(){
+  $("#secondhide").click(function(){
+    $("#second").hide();
+  });
+  $("#secondshow").click(function(){
+    $("#second").show();
+  });
+});
+</script>
+<p style="color: white;">Ebola virus disease (EVD) formerly known as Ebola haemorrhagic fever, is a severe, often fatal illness affecting humans and other primates.
+The virus is transmitted to people from wild animals (such as fruit bats, porcupines and non-human primates) and then spreads in the human population through direct contact with the blood, secretions, organs or other bodily fluids of infected people, and with surfaces and materials (e.g. bedding, clothing) contaminated with these fluids.
+The average EVD case fatality rate is around 50%. Case fatality rates have varied from 25% to 90% in past outbreaks.
+The first EVD outbreaks occurred in remote villages in Central Africa, near tropical rainforests. The 2014–2016 outbreak in West Africa was the largest and most complex Ebola outbreak since the virus was first discovered in 1976. There were more cases and deaths in this outbreak than all others combined. It also spread between countries, starting in Guinea then moving across land borders to Sierra Leone and Liberia.
+It is thought that fruit bats of the Pteropodidae family are natural Ebola virus hosts.
+<p id="second">
+erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In atgue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor portague ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor portague ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor portague ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor portague ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</p>
+<button id="secondhide">Read Less</button>
+<button id="secondshow">Read More</button>
+</fieldset>
+</div>
+
+<br>
+<br>
+
+<h1 class="ml3" align="center" style="color: red;">Rates of severe COVID-19 have reduced </h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<style type="text/css">
+.ml3 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+</style>
+
+<script type="text/javascript">
+  
+
+  var textWrapper = document.querySelector('.ml3');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml3 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 550,
+    delay: (el, i) => 150 * (i+1)
+  }).add({
+    targets: '.ml3',
+    opacity: 0,
+    duration: 400,
+    easing: "easeOutExpo",
+    delay: 500
+  });
+</script>
+
+<div align="center">
+<br>
+<img src="young-man-riding-bus.jpg">
+</div>
+
+<br>
+<div align="center">
+<fieldset style="width: 65%; background-color: black; color: white">
+  <script>
+$(document).ready(function(){
+  $("#thirdhide").click(function(){
+    $("#third").hide();
+  });
+  $("#thirdshow").click(function(){
+    $("#third").show();
+  });
+});
+</script>
+  <h2 style="color: cyan;"><marquee>Some countries showing spikes in COVID-19 transmission, especially among young people: PAHO</marquee></h2>
+<p>While Brazil and the US remain significant drivers of new cases, over the past 60 days, 11 countries and territories in the Caribbean have moved from moderate to intense transmission.   
+
+Washington D.C., October 7, 2020 (PAHO) - Transmission of COVID19 in the Americas remains very active, with some countries suffering recurrent spikes in cases and the virus spreading in new and different ways, Pan American Health Organization (PAHO) Director Carissa F Etienne, said today.  
+
+“While Brazil and the U.S. remain significant drivers of new cases in our region, we’re concerned by spikes in cases – including in places that had effectively managed outbreaks, like Cuba and Jamaica. In fact, over the past 60 days, 11 countries and territories in the Caribbean have moved from moderate to intense transmission, which is a concerning development as countries reopen airspace,” she told a news briefing today.  
+
+Over 17 million cases of COVID-19 have been reported in the Americas, with more than 574,000 deaths, representing half of all cases worldwide and more than half of all deaths, Etienne noted. 
+
+The new ways in which it is spreading is among younger people who have mild or no symptoms and are unaware they are infected. In the US, young people, especially those aged 20-29 years old, represent 20% of new cases. “While many young people won’t become ill or require an ICU bed, they are not immune to developing the serious effects of COVID-19,” she said.  
+
+Elderly people and those with diabetes or hypertension are still vulnerable, “So I urge people of all ages to continue to wear masks, practice social distancing to protect themselves and avoid exposing others, the PAHO Director said.</p>
+
+
+<p id="third">
+Rates of severe COVID-19 have reduced 
+Dr. Etienne said, “that rates of severe COVID illness have fallen across our region. Today, fewer people are being hospitalized and fewer require intensive care than before, due in part to our growing knowledge of this virus and how to manage critically ill patients.“ 
+
+PAHO has  held more than 160 trainings, delivered more than 17 million COVID PCR tests, and millions more gloves, gowns and masks to keep health workers safe, she said, noting that “when hospitals are able to cope and manage patients, there are fewer deaths. These efforts have helped save thousands of lives and will continue to protect countless more.” 
+
+Etienne gave credit to the work of governments which “acted quickly to expand laboratory networks, increase hospital beds, and hire and train health care workers” As well as health care workers “for their dedication and commitment,” under difficult conditions.  
+
+Vulnerable groups at particular risk 
+Yet despite these efforts, Etienne highlighted that several groups remain at particular risk, particularly those “with limited access to prevention and care”, including black, Hispanic and Native American populations in the US  which “are nearly three times as likely to contact COVID as their white counterparts. 
+
+Etienne also underscored the importance of addressing the health of indigenous populations and migrants in the Region of the Americas. “Migrant and refugee populations may be increasingly exposed and are at higher risk,” she said. “PAHO has provided support to national authorities in Ecuador, Costa Rica, Brazil and Mexico to design strategies so migrant populations can continue to have access to the food, health care and mental health support they need,” she said. 
+
+“Our solidarity towards migrants is not only key for controlling transmission and preventing unnecessary deaths due to COVID-19, but a core reflection of our shared belief that everyone has a right to health and we must leave no one behind,” PAHO’s director added.</p>
+<button id="thirdhide">Read Less</button>
+<button id="thirdshow">Read More</button>
+</fieldset>
+</div>
+</fieldset>
+
+</body>
+</html> 

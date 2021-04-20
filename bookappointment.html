@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet"type ="text/css" href="book appointmoent.css">
+  <style type="text/css">
+    #paying{
+      display: none;
+    }
+    body{background-image: linear-gradient(#abaced,#83d4d1);
+    }
+    *{
+      text-transform: capitalize;
+      font-size: 20px;
+    }
+    label{
+      font-size: 20px;
+    }
+    p{
+      text-align: center;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        text-align: left;
+      }
+    .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 25%;
+  text-align: center;
+  font-size: 15px;
+}
+
+.collapsible:hover {
+  background-color: #000000;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+body {
+  font-family: sans-serif;
+  font-size: 17px;
+}* {
+  box-sizing: border-box;/*do not remove */
+  text-transform: capitalize;/*do not remove */
+}
+.row {
+  display: flex;/*do not rePaymove */
+  flex-wrap: wrap;/*do not remove */
+}
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;/*do not remove */
+}
+.container {
+  background-color:lightgrey;/*do not remove */
+  padding: 5px 20px 15px 20px;
+}
+input[type=text] {
+  width: 100%;/*do not remove */
+  margin-bottom: 20px;/*do not remove */
+  padding: 12px;
+}
+label {
+  display: block;/*do not remove */
+}
+input[type=text]{
+	border-radius: 30px;
+	border-color: lightgrey;
+}
+.i:hover{
+	color: green;
+}
+  </style>
+  <title>Appointment</title>
+  </head>
+  <script type="text/javascript"></script>
+</head>
+<body>
+  <p align="left"><a href=""><--</a>
+    <a href="mainpage1.html">| HOME |</a>
+    <a href="">--></a></p>
+
+<h2 align="center" style="font-size: 40px;">Request an Appointment</h2><br>
+<div align="center">
+<img src="OIP.fEJQuql6ve-nQB3kyVqKcQHaHa.jpeg" width="90px" height="90px"></div>
+  <h2 style="text-align: center;">Get The Care You Need</h2>
+  <p>Please complete the request Form below</p>
+  <p>We are here for all your health care needs.</p>
+  <p>Very Serious: Walk in our Health Care Centres.</p>
+</ul>
+
+<p align="center"><strong>Due to COVID-19, we are experiencing higher than normal volume of Forms which is impacting our requests.</strong><br><br>
+<div>
+<form>
+<label>Reason For Appointment</label><br>
+<textarea rows="3" cols="40" style="border-radius: 30px;"></textarea><br><br>
+
+<label>Doctor's Name (If Known)</label><br>
+<input type="textarea" style="border-radius: 30px;" name="dname" size="40" required=""><br><br>
+
+<label for="location">Preffered Location</label><br>
+  <input list="locations" style="border-radius: 30px;" name="location" id="location" size="40" required="">
+  <datalist id="locations">
+    <option value="Mumbai">
+    <option value="Kolkata">
+    <option value="New Delhi">
+    <option value="Gujrat">
+    <option value="Rajasthan">
+  </datalist><br><br>
+
+
+  <label>First Name</label><br>
+  <input type="textarea" style="border-radius: 30px;" name="fname" size="40" required=""><br><br>
+  
+  <label>Last Name</label><br>
+  <input type="textarea" style="border-radius: 30px;" name="dname" size="40"required=""><br><br>
+
+  <label for="dob">Date Of Birth</label><br>
+  <input type="Date" style="border-radius: 30px;" id="dob" name="dob" size="40"required=""><br><br>
+
+  <label>Address</label><br>
+  <textarea rows="3" cols="40"required="" style="border-radius: 30px;"></textarea><br><br>
+  
+  <label for="city">City</label><br>
+  <input type="textarea" style="border-radius: 30px;" id="city" name="city" size="40"required=""><br><br>
+
+  <label>State/Province</label><br>
+  <input type="textarea" style="border-radius: 30px;" name="stpr" size="40"required=""><br><br>
+
+  <label>Zip Code/Postal Code</label><br>
+  <input type="Postal" style="border-radius: 30px;" name="zpcd" size="40"required=""><br><br>
+
+  <label>Phone</label><br>
+  <input type="Phone" style="border-radius: 30px;" name="phone" required="Phone" size="40"><br><br>
+
+  <label>E-mail</label><br>
+  <input type="email" style="border-radius: 30px;" name="fname" size="40" required="email"><br><br>
+
+  <label>Contact Name</label><br>
+  <input type="textarea" style="border-radius: 30px;" name="cname" size="40"><br><br>
+ 
+  <br><br>
+  <p align="center">
+  
+<!--<input type="Submit" name="Submit">-->
+
+</p>
+</form>
+</div>
+
+<button class="collapsible" style="background-color: blue; width: 20%">Pay</button>
+<head>
+
+<div style="display: none;" class="paying">
+<body>
+  <form>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+        <div class="row">
+          <div class="col-50">
+            <h3 align="center">card details</h3>
+            <label> Full Name</label>
+            <input type="text" placeholder="Joe" required="text" maxlength="20" required="">
+            <label>Email</label>
+            <input type="text" placeholder="joe@gmail.com" required="email" maxlength="50">
+            <label for="city">City</label>
+            <input type="text"placeholder="Mumbai" required="text" maxlength="15">
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text"placeholder="Maharashtra" required="text" maxlength="25">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text"placeholder="400068" required="Postal" maxlength="6">
+              </div>
+            </div>
+          </div>
+          <div class="col-50"><!--do not remove-->
+            <h3>Payment</h3>
+            <div class="icon-container"> <!--do not remove-->
+            </div>
+            <label>Name on Card</label>
+            <input type="text"placeholder="Joe" required="text">
+            <label>Card number</label>
+            <input type="text"placeholder="11XX-XXXX-XXXX" required="" maxlength="12">
+            <label for="expmonth">Exp Month</label>
+            <input type="text"placeholder="September" required="Month" maxlength="15">
+            <div class="row">
+            <div class="col-50">
+            <label>Exp Year</label>
+            <input type="text"placeholder="2020" required="Year" maxlength="4">
+            </div>
+            <div class="col-50">
+            <label>CVV</label>
+            <input type="text"placeholder="100" required="number" maxlength="3">
+              </div>
+            </div>
+          </div> 
+        </div>
+        <label>
+        </label>
+        <div align="center">
+       <button onclick="box()" class="i" style="width: 30%; padding:10px; border-radius: 30px; background-color: blue;">Proceed</button> 
+      </div>
+</form>
+    </div>
+  </div>
+  <div class="col-25">
+  </div>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+  function box(){
+    alert("Make payemnt?")
+  }
+</script>
+</html>

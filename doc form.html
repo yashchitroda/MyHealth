@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Apply</title>
+<style> 
+  form {
+    text-align:block;
+  }
+  *{
+    background-color: lightcyan;
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+  button{
+    background-color: black;
+    color: white;
+  }
+  a{
+    text-decoration: none;
+  }
+  </style>
+</head>
+<body>
+<form>
+  <p align="left"><a href=""><--</a>
+    <a href="mainpage1.html">| Home |</a>
+    <a href="">--></a>
+
+
+<h2 style="font-size: 40px;">Contact details</h2>
+
+<input type = "email" style="border-radius: 30px;" placeholder="E-mail" required="email" minlength="10" maxlength="35"><br>
+<br>
+<input type = "text" style="border-radius: 30px;" placeholder="Full Name" required="text" minlength="8" maxlength="20" name = "text"><br><br>
+<input type = "text" style="border-radius: 30px;" placeholder="Address" required="text" minlength="10" maxlength="50" name = "text" ><br><br>
+<input type = "text" style="border-radius: 30px;" placeholder="Country/Region" required="country" minlength="8" maxlength="20" name = "text">
+<input type = "text" style="border-radius: 30px;" placeholder="City" required="text" minlength="8" maxlength="20" name = "text"><br><br>
+<input type = "text" style="border-radius: 30px;" placeholder="State/province" required="text" minlength="8" maxlength="20" name = "text">
+<input type = "text" style="border-radius: 30px;" placeholder="Zip/postal" required="number" minlength="10" maxlength="90000" name = "text"><br><br>
+
+<h2 style="font-size: 40px;">Education</h2>
+<input type = "text" style="border-radius: 30px;" placeholder="School Name" required="text" minlength="8" maxlength="" name = "text"><br><br>
+<input type = "text" style="border-radius: 30px;" placeholder="College Name" required="text" minlength="8" maxlength="" name = "text"><br><br>
+<input type = "text" style="border-radius: 30px;" placeholder="College CGPA" required="text" minlength="8" maxlength="" name = "text"><br><br>
+<input type = "text" style="border-radius: 30px;" placeholder="Name of the University" required="text" minlength="8" maxlength="" name = "text"><br><br>
+<input type = "text" style="border-radius: 30px;" placeholder="University CGPA" required="text" minlength="8" maxlength="" name = "text"><br><br>
+
+<h2 style="font-size: 40px;">Enter your Degree:</h2>
+<select id="qualification">
+    <option value="mbbs">Bachelor of Medicine, Bachelor of Surgery (M.B.B.S)</option>
+    <option value="md">Doctor of Medicine (MD)</option>
+    <option value="dos">Doctor of Osteopatic (DO)</option>
+    <option value="phd">Doctor of Philosophy (PhD,DPhil)</option>
+    <option value="mm">Matser of Medicine (MM,MMed)</option>
+    <option value="dcm">Doctor of Clinical Medicine(DCM)</option>
+    <option value="msurg">Doctor of Clinical surgery (MS,MSurg)</option>
+    <option value="dos">Doctor of Surgery (DS, DSurg)</option>
+    <option value="dmsc">Doctor of Medical Science (DMSc, DMedSc) </option>
+    <option value="ddlinsurg">Doctor of Clinical Surgery (DClinSurg)</option>
+</select>
+
+<h2 style="font-size: 40px;">Work Experience</h2>
+
+<p>Experience Level<br>
+<input type="radio" name="Experience Level" value="Experience Level">
+<label>0-1 Year</label><br>
+<input type="radio" name="Experience Level" value="Experience Level">
+<label>1-3 Year</label><br>
+<input type="radio" name="Experience Level" value="Experience Level">
+<label>3-5 Year</label><br>
+<input type="radio" name="Experience Level" value="Experience Level">
+<label>5-8 Year</label><br>
+<input type="radio" name="Experience Level" value="Experience Level">
+<label>More than 8 Years</label><br>
+</p>
+
+
+
+<h2 style="font-size: 35px;">Skills (Choose your skills)</h2>
+    <input type="checkbox" id="Anaesthetics" value="anaes">
+    <label for="anaesthetics">Anaesthetics</label><br><br>
+    <input type="checkbox" id="Emerme" value="emerme">
+    <label for="emerme">Emergency Medicine</label><br><br>
+    <input type="checkbox" id="Surgery" value="sur">
+    <label for="sur"></label>Surgery<br><br>
+    <input type="checkbox" id="tort" value="tor">
+    <label for="Tort"> Trauma and Orthopaedics </label><br><br>
+    <input type="checkbox" id="Paediatrics" value="paed">
+    <label for="paediatrics"> Paediatrics  </label><br><br>
+  
+  </p>
+
+<h2 style="font-size: 40px;">Resume</h2>
+<p>Upload your resume (4 MB max)</p>
+<input type="file" id="myFile" name="filename"><br><br>
+<p align="center">
+<button onclick = "myfunction()">apply</button>
+</p>
+<script>
+function myfunction(){
+  confirm("Are you sure want to submit application");
+  window.alert("We will contact you soon");
+  }
+</script>
+
+</p>
+</div>
+</body>
+
+</html>

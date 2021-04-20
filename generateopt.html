@@ -1,0 +1,72 @@
+<html>
+<head>
+<body>
+   <p style="padding: none; font-size: 20px;"> <a href=""><--</a>
+    <a href="mainpage1.html">| Home |</a>
+    <a href="">--></a></p>
+</head>
+
+<style type="text/css">
+  form{
+    text-align: center;
+  }
+    *{
+      padding: 15px;
+      background-color: #dee4e7;
+  }
+  a{
+    text-decoration: none;
+    font-size: 30px;
+  }
+  </style>
+  <div align="center">
+  <fieldset style="width: 50%; border-radius: 50px; border:1px solid #aaaaaa;">
+    
+    <h2 align="center">Generate An OTP</h2>
+    <form>
+    <p align="center">
+        <div>
+        <button onclick="alt()">GENERATE AN OTP</button>
+ 
+
+        <script>
+          function alt(){
+          alert(document.getElementById('demo').innerHTML = getRndInteger(1000,9999))
+
+        }
+
+            function getRndInteger(min, max) {
+                return Math.floor(Math.random() * (max - min)) + min;
+            }
+        </script>
+        <p id="demo">Click Generate An OTP To Continue</p>
+        <p>
+        </form>
+            <label>Enter The Above Otp</label><br>
+            <input type="text"required="" style="border-radius: 30px;"></input>
+            <br><br>
+                <button onclick ="box()" style="border-radius: 30px; background-color: blue; color: white;">LOGIN</button>
+                 <button onclick ="main()" style="border-radius: 30px; background-color: green; color: white;">NEXT</button>
+                 </fieldset>
+</body>
+<script type="text/javascript">
+    function box(){
+            confirm("confirm Action?")    
+            confirm("logined successfully")
+            confirm("press next to contiue..")              
+    }
+</script>
+
+<script type="text/javascript">
+  function main(){
+     var a
+            var a = prompt("kindly mention your username")
+            confirm("welcome " +a+ " to myhealth")
+            window.location.href = ("logined mainpage.html")            
+  }
+</script>
+        </p>
+    </div>
+
+
+</html>

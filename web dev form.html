@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Apply</title>
+<style> 
+  form {
+    text-align:block;
+  }
+  *{
+    background-color: lightgrey;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+  input[type=text]{
+    border-radius: 30px;
+    border: 1px solid #aaaaaa;
+  }
+  </style>
+</head>
+<body>
+<form>
+ <p align="left"><a href=""><--</a>
+    <a href="mainpage1.html">| Home |</a>
+    <a href="">--></a>
+<h2 style="font-size: 40px;">Contact details</h2>
+
+<input type = "email" placeholder="E-mail" required="email" minlength="10" maxlength="35"><br>
+<br>
+<input type = "text" placeholder="Full Name" required="text" minlength="8" maxlength="20" name = "text"><br><br>
+<input type = "text" placeholder="Address" required="text" minlength="10" maxlength="50" name = "text" ><br><br>
+<input type = "text" placeholder="Country/Region" required="country" minlength="8" maxlength="20" name = "text">
+<input type = "text" placeholder="City" required="text" minlength="8" maxlength="20" name = "text"><br><br>
+<input type = "text" placeholder="State/province" required="text" minlength="8" maxlength="20" name = "text">
+<input type = "text" placeholder="Zip/postal" required="number" minlength="10" maxlength="90000" name = "text"><br><br>
+
+<h2 style="font-size: 40px;">higher education</h2>
+<input type = "text" placeholder="School Name" required="text" minlength="8" maxlength="20" name = "text"><br><br>
+<input type = "text" placeholder="College Name" required="text" minlength="8" maxlength="20" name = "text"><br><br>
+
+<h2 style="font-size: 40px;">Degree</h2>
+<select id="qualification">
+    <option value="bachelor of science">Bachelor Of Science (Computer Science)</option>
+    <option value="bachelor of science">Bachelor Of Science (Information Technology)</option>
+    <option value="btech">Bachelor Of Technology</option>
+    <option value="master of science">Masters Of Science (Computer Science)</option>
+    <option value="master of science">Masters Of Science (Information Technology)</option>
+</select>
+
+<h2 style="font-size: 40px;">Work Experience</h2>
+<br>
+<input type="radio" name="Experience Level" value="Experience Level">
+<label >0-1 Year</label><br>
+<input type="radio" name="Experience Level" value="Experience Level">
+<label >1-3 Year</label><br>
+<input type="radio" name="Experience Level" value="Experience Level">
+<label >3-5 Year</label><br>
+<input type="radio" name="Experience Level" value="Experience Level">
+<label >More than 5 Years</label><br>
+</p>
+
+<input type = "text" placeholder="Employer Name" minlength="5" maxlength="10" name = "text"><br><br>
+<input type = "text" placeholder="Job Title" minlength="6" maxlength="10" name = "text"><br><br>
+
+<h2 style="font-size: 40px;">You are comfortable in (Choose from the following option)</h2><br><br>
+    <input type="checkbox" id="programming" value="Frontend">
+    <label for="frontend">Frontend Development (Web)</label><br><br>
+    <input type="checkbox" id="programming" value="Backend">
+    <label for="backend">Backend Development (DataBase)</label><br><br>
+    <input type="checkbox" id="programming" value="Ui">
+    <label for="ui">User Interface (UI)</label>
+  
+
+<h2 style="font-size: 40px;">Resume</h2>
+<p>Upload your resume (4 MB max)</p>
+<input type="file" id="myFile" name="filename"><br><br>
+<p align="center">
+<button onclick = "myfunction()">apply</button>
+</p>
+<script>
+function myfunction(){
+  confirm("Are you sure want to submit application");
+  window.alert("We will contact you soon");
+  }
+</script>
+
+</p>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,385 @@
+<html>
+<head>
+<title>face-mask</title>
+<style>
+		div.wrapper {
+		position: relative;
+		clear: both;
+		width: 100%;
+		border : 1px solid #000000;
+		overflow:auto;
+		}
+		div.left {
+		float: left;
+		width: 85%;
+		background: #ffffff;
+		border : 1px solid #000006;
+
+		}	
+		div.right {
+		float: right;
+		width: 15%;
+		background: #ffffff;
+		border : 1px solid #000001;
+		}
+		.wrapper p{
+		margin:0px;
+		}
+		body {
+	  	font-family: Arial;
+	  	font-size: 20px;
+	  	padding: 8px;
+	  	text-transform: capitalize;
+		}
+		.container {
+		  background-color: #f2f2f2;
+		  padding: 5px 20px 15px 20px;
+		  border: 1px solid lightgrey;
+		  border-radius: 3px;
+		}
+		hr {
+		  border: 1px solid lightgrey;
+		}
+		a{
+		  text-decoration: none;
+		}
+		span.price {
+		  float: right;
+		  color: grey;
+		}
+		* {
+  		box-sizing: border-box;
+      text-transform: capitalize;
+		  }
+
+		img {
+		  vertical-align: middle;
+		}
+
+		/* Position the image container (needed to position the left and right arrows) */
+		.container1 {
+	 	 position: relative;
+		}
+
+		/* Hide the images by default */
+		.mySlides {
+		display: none;
+		}
+
+		/* Add a pointer when hovering over the thumbnail images */
+		.cursor {
+  		cursor: pointer;
+		}
+
+		/* Next & previous buttons */
+		.prev,
+		.next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 40%;
+		  width: auto;
+		  padding: 16px;
+		  margin-top: -50px;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 20px;
+		  border-radius: 0 3px 3px 0;
+		  user-select: none;
+		  -webkit-user-select: none;
+		}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container1 {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+#panel, #flip {
+  padding: 5px;
+  text-align: left;
+  background-color: lightblue;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+#wrapper1 {
+  display:table;
+  width:100%;
+}
+#row1 {
+  display:table-row;
+}
+#first1 {
+  display:table-cell;
+  background-color:cyan;
+  width:33%;
+}
+#second1 {
+  display:table-cell;
+  background-color:cyan;
+  width:33%;
+}
+#third1 {
+  display:table-cell;
+  background-color:cyan;
+  width:33%;
+}
+#fourth1 {
+  display:table-cell;
+  background-color:cyan;
+  width:33%;
+}
+
+
+body{
+  background-color: cyan;
+  color: black;
+}
+.sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color:black;
+  padding:none;
+
+
+	</style>
+
+</head>
+
+<body>
+	<h1 style="background-color:black; opacity: 0.7; color: white;" class="sticky" align="center">MyHealth</h1>
+  <p align="left"><a href=""><--</a>
+    <a href="mainpage1.html">| HOME |</a>
+    <a href="">--></a>
+<div class="wrapper" align="center"><p style="font-size: 30px;">face-mask</p>
+	
+		<div class="left">
+			<div align="center">
+			<h2 style="text-align:center">Slideshow Gallery</h2>
+
+<link rel="stylesheet" href="../lib/w3.css">
+<body>
+  <div align="center">
+<div class="w3-content" style="max-width:550px;position:relative">
+<div class="w3-display-container mySlides">
+  <img src="facemask.jpg" width="520px" height="380px">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+  </div>
+</div>
+<div class="w3-display-container mySlides">
+  <img src="facemask1.jpg" width="520px" height="380px">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+
+  </div>
+</div>
+<div class="w3-display-container mySlides">
+  <img src="facemask2.jpg" width="520px" height="380px">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+
+  </div>
+</div>
+<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:52%;left:0 " onclick="plusDivs(-1)">-</a>
+<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:52%;right:0" onclick="plusDivs(1)">+</a>
+</div>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</body>
+		</div>
+		</div>
+		<div class="right">
+			<div align="right">
+				
+    <div class="container" style="text-align: left; padding: 10px;">
+      <h4>Cart <span class="price" style="color:black"></span></h4>
+      <p><a href="equipments.html"> Face Mask</a> <span class="price">$2.50</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$2.50</b></span></p>
+    </div><br>
+    <div align="center" style="background-color: #f2f2f2">
+<input type="button" onclick="decrementValue()" value="-" />
+<input type="text" name="quantity" value="1" maxlength="2" max="10" size="1" id="number" />
+<input type="button" onclick="incrementValue()" value="+" />
+</div>
+ 
+    <br>
+    <div align="center" style="background-color: #f2f2f2">
+<input type="text-decoration" align="left" name="Coupon" placeholder="Enter Coupon Code Here" style="padding: 12px;"><br><br>
+<button onclick="document.location='shop pay.html'" style="padding: 12px; border-radius:20%">buy now</button>
+<button style="padding: 12px; border-radius:20%">Apply</button><br>
+<div class="container">
+    <p style="color: red;">Use Promo Code: <span class="promo"><b>FACMSK299</b></span></p>
+    <p class="expire">Expires: NOV 2, 2020</p>
+  </div>
+</div>
+</div>
+  <script type="text/javascript">
+function incrementValue()
+{
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    if(value<10){
+        value++;
+            document.getElementById('number').value = value;
+    }
+}
+function decrementValue()
+{
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    if(value>1){
+        value--;
+            document.getElementById('number').value = value;
+    }
+
+}
+</script>
+
+		</div>
+</fieldset>
+	</div>
+	
+	</div>
+<div>
+	<p><b>Product name:</b>Face Mask</p>
+	<p>
+    <ul>
+
+    <li>Breathable and Light ; High Elastic Ear Loop Help Fit Different Users ;At Least 95% Filtration Efficiency</li>
+    <li>Activated Corbon Filter: Provides effective relief from nuisance levels of organic vapors. Exhalation Valve : Increased comfort -Reduces heat and moisture buildup.</li>
+    <li>Chin Fold Desigen Provides Improved Comfort. Soft cover web on inner pannel feels comfortable against skin.</li>
+    <li>Help to protect you from dust and weather,dust, pollen and smoke, allowing you to breathe normally.</li>
+    <li>CE Certified</li>
+
+    </ul>
+	</p>
+</div>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+<style> 
+
+</style>
+</head>
+<body>
+ 
+<button id="flip" style="border-radius: 30%">Click here to Know more</button>
+<div id="panel">
+	<p>
+Product details
+<ul>
+    <li>Product Dimensions : 10 x 10 x 10 cm; 160 Grams</li><br>
+    <li>Date First Available : 13 April 202</li><br>
+    <li>Manufacturer : LuzuLiyo</li><br>
+    <li>ASIN : B08DMPMQVV</li><br>
+    <li>Item part number : mask parent</li><br>
+    <li>Country of Origin : India</li><br>
+    <li>Manufacturer : LuzuLiyo, LuzuLiyo</li><br>
+    <li>Item Weight : 160 g</li><br>
+    <li>Item Dimensions LxWxH : 10 x 10 x 10 Centimeters</li><br>
+    <li>Units : 1.00 Count</li><br>
+</ul>
+	</p>
+</div>
+<br>
+	<p align="center">People also search for:</p>
+	<br>
+<div style="background-color: black;">
+<div id="wrapper1">
+  		 <div id="first1">
+  	  	 <a href="glucometer.html"><img alt="Face Mask" src="glucometer1.jpeg"width="150" height="150"></a>
+  	  	 <br>
+  	  	 <caption>glucometer</caption>
+  		 </div>
+
+  		 <div id="second1">
+  		 <a href="antiseptic wipes.html"><img alt="Face Mask" src="61NHSUUgfiL._SL1059_.jpg"width="120" height="120"></a>
+  	  	 <br>
+  	  	 <caption>antiseptic-wipes</caption>
+		 </div>
+  	
+         <div id="third1">
+  		 <a href="oximeter.html"><img alt="Face Mask" src="Unknown-2.jpeg"width="120" height="120"></a>
+  	  	 <br>
+  	  	 <caption>oximeter</caption>
+  	  	</div>
+
+  		 <div id="fourth1">
+  		 <a href="firstaid.html"><img alt="Face Mask" src="babysitting-first-aid-kit.jpg"width="120" height="120"></a>
+  	  	 <br>
+  	  	 <caption>First-aid kit</caption>
+  	  	 </div>  
+</div>
+</div>
+</body>
+</body>
+</html>

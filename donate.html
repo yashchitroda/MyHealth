@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Donate - MyHealth</title>
+	<style>
+		.sticky{
+    	position: -webkit-sticky;
+    	position: sticky;
+    	top: 0;
+    	background-color:lightgrey;
+    	}
+      body{background: linear-gradient(to bottom, #cc99ff 0%, #6699ff 100%);}
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+body {
+  font-family: sans-serif;
+  font-size: 17px;
+}* {
+  box-sizing: border-box;/*do not remove */
+  text-transform: capitalize;/*do not remove */
+}
+.row {
+  display: flex;/*do not rePaymove */
+  flex-wrap: wrap;/*do not remove */
+}
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;/*do not remove */
+}
+.container {
+  background-color:#b2bcc0;/*do not remove */
+  padding: 5px 20px 15px 20px;
+}
+input[type=text] {
+  width: 100%;/*do not remove */
+  margin-bottom: 20px;/*do not remove */
+  padding: 12px;
+}
+label {
+  display: block;/*do not remove */
+}
+
+	</style>
+</head>
+<body>
+
+<h1 style="background-color:black; opacity: 0.7; color: white;" class="sticky" align="center">MyHealth</h1>
+
+<h2 align="center" style="font-size: 35px;">Donate To MyHealth</h2>
+<div align="center"><img src="OIP.JTTAE_ocyifv2GTtOUKmrgHaHa-removebg-preview.png" width="90px" height="90px"></div>
+
+<fieldset style="background-color:;">
+
+<h1 style="font-size: 35px;align-content: center;">Donate</h1>
+<p style="font-size: 25px; font-family: sans-serif;">Investing in the health of your community.</p>
+
+<p style="font-size: 20px;">Community support is essential to MyHealth Care mission of delivering the best health care possible. Your contributions enable us to provide the most advanced medicine to our patients, close to home, sparing them and their families the time and expense of traveling long distances to receive top medical care.
+<p style="font-size: 25px;align-content: center;">Community Focused</p>
+
+<p style="font-size: 20px;">MyHealth System hospitals, specialty centers and clinics benefit greatly from your generosity and philanthropy. Charitable contributions remain in the communities where they are donated in order to meet local needs.
+Highlights of your philanthropy.</p>
+<p style="font-size: 18px;">Our benefactors have helped enhance our overall health care environment through contributions toward new facilities, advanced technology, research and educational endeavors, and creating a warm, welcoming setting for patients and their families. Your gifts make a difference.</p>
+<h1>Plan your Donation</h1>
+
+
+<p style="font-size: 20px;">MyHealth System medical centers are public charities approved by the IRS as nonprofit organizations. Contributions help support patient and community care.</p>
+</p>
+</fieldset>
+
+<br>
+<fieldset>
+	<p>
+<h1>Support MyHealth Today</h1>
+<ul style="font-size: 20px;">
+  <li>As a nonprofit organization, MyHealth relies on generous people like you to advance our work.</li><br>
+<li>With your support, MyHealth is able to provide unparalleled expertise in patient care, innovative research to meet the needs of our patients, and medical education to train the health care workforce of tomorrow..</li><br>
+<li>Support our Greatest Needs or Emergency Preparedness Fund using the form below</li><br>
+<li>Donate blood and help other Peoples/Patients</li><br>
+<li>Donate Supplies - please email Dan Hainault for information on our current supply needs and how to make a tax-deductible donation</li><br>
+<li>Visit Centura Health's community info page for tips on keeping yourself and others safe</li><br>
+</ul>
+</p>
+</fieldset>
+<br>
+<h1>Enter the details below for making an donation</h1>
+<br>
+<fieldset style="width: 80%;">
+<button id="flip">Proceed for donation</button>
+<div id="panel">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+</script>
+</head>
+<head>
+
+
+<body>
+  <form>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+        <div class="row">
+          <div class="col-50">
+            <h3>Card details</h3>
+            <label> Full Name</label>
+            <input type="text" placeholder="Joe" required="text" maxlength="20" required="">
+            <label>Email</label>
+            <input type="text" placeholder="joe@gmail.com" required="email" maxlength="50">
+            <label for="city">City</label>
+            <input type="text"placeholder="Mumbai" required="text" maxlength="15">
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text"placeholder="Maharashtra" required="text" maxlength="25">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text"placeholder="400068" required="Postal" maxlength="6">
+              </div>
+            </div>
+          </div>
+          <div class="col-50"><!--do not remove-->
+            <h3>Payment</h3>
+            <div class="icon-container"> <!--do not remove-->
+            </div>
+            <label>Name on Card</label>
+            <input type="text"placeholder="Joe" required="text">
+            <label>Card number</label>
+            <input type="text"placeholder="11XX-XXXX-XXXX" required="" maxlength="12">
+            <label for="expmonth">Exp Month</label>
+            <input type="text"placeholder="September" required="Month" maxlength="15">
+            <div class="row">
+            <div class="col-50">
+            <label>Exp Year</label>
+            <input type="text"placeholder="2020" required="Year" maxlength="4">
+            </div>
+            <div class="col-50">
+            <label>CVV</label>
+            <input type="text"placeholder="100" required="number" maxlength="3">
+              </div>
+            </div>
+          </div>
+          <div align="center">
+          <h2 style="font-size: 30px; text-align: center;">You can also Donate By Scanning QR Code</h2></div>
+          </div><br>
+          <div><img src="myhealthqrcode.jpeg" height="200px" width="200px" align="center"></div>
+        </div><br>
+        <label>
+        </label>
+        <div align="center">
+       <button onclick="box()" class="btn" style="width: 30%; padding:10px; background-color: blue;cursor: pointer;">Donate</button> 
+      </div>
+</form>
+    </div>
+  </div>
+  <div class="col-25">
+  </div>
+</div>
+</body>
+
+</body>
+</body>
+</html>

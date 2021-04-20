@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>a</title>
+
+<body>
+
+
+<style type="text/css">
+#slide{
+  width:96%;
+  }
+  
+* {
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+.mySlides {
+  display: none
+}
+
+.slideshow-container {
+  width: 1200px;
+  position: relative;
+  margin: -10px;
+
+}
+
+.prev, .next {
+  cursor:progress;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bolder;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 5px 5px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+p{
+  font-size: 23px;
+}
+body{
+  background-color: lightgrey;
+}
+</style>
+</head>
+
+<h1 align="center" style="font-size: 50px;"> accomplishments</h1>
+<div align="center">
+<img src="426753-200.png" height="90px" width="90px"></div>
+<fieldset style="background-color: black;">
+  <br>
+<div id="slide" align="center">
+  <div class="slideshow-container">
+    <div class="mySlides fade"> <img src="Screenshot 2020-10-13 at 2.28.58 PM.png" height="500px" width="1000px;" style="width:100%"> </div>
+    <div class="mySlides fade"> <img src="my health certificate.png" height="500px" width="1000px;" style="width:100%"> </div>
+  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> </div>
+  <br>
+  </fieldset>
+
+   <script type="text/javascript">
+   var slideIndex = 0;
+showSlides();
+var slides;
+
+function showSlides() {
+    var i;
+    slides = document.getElementsByClassName("mySlides");
+    dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+function plusSlides(position) {
+    slideIndex +=position;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    else if(slideIndex<1){slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+   
+    slides[slideIndex-1].style.display = "block";  
+
+}
+function currentSlide(index) {
+    if (index> slides.length) {index = 1}
+    else if(index<1){index = slides.length}
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }   
+    slides[index-1].style.display = "block";  
+    dots[index-1].className += " active";
+}
+</script>
+</body>
+<h1 style="font-size: 40px; text-align: center; color: blue;"><marquee direction= "up" scrollamount="15px;">accomplishment of myhealth</marquee></h1>
+<fieldset style="background-color: black; color: white;">
+<h1 style="font-size: 40px;" align="center"> excellence service of the year</h1>
+<div align="center">
+<img src="Screenshot 2020-10-13 at 2.28.58 PM.png" height="500px" width="1000px";></div>
+<h1 style="font-size: 35px; text-align: center;"> my health has been awarderd for the best service of the year by university of washington</h1></div>
+</fieldset>
+
+<h1>Healthcare is a customer service industry. Companies (and customers)</h1> 
+<p>live or die based on the quality of care provided and the daily interactions between staff and patients. The first key to providing great customer service in the healthcare industry is to stop treating patients as customers whose sole purpose is to generate revenue. Great customer service starts with taking a patient-centric perspective – viewing them as people your company is meant to help.</p>
+
+<p>Every employee in a healthcare company is potentially a customer service representative – someone whose daily activities should be focused on improving the quality of care provided to patients. Some employees will interact with patients directly while others work in supporting roles (behind the scenes), but everyone should approach his or her job with a customer-service mindset.</p>
+
+<h1>Why Customer Service is Important to Healthcare Companies?</h1>
+<p>Customer service experiences set the expectation for the quality of care</p>
+
+<p>You may have the most skilled physicians and experienced nurses in the industry, but if you can’t provide a consistently high-quality experience for your patients, they won’t recognize you for outstanding healthcare. The goal of healthcare companies should be to develop long-term relationships with patients rather than approaching each interaction as if it was a transaction.</p>
+
+<h2>Happy patients are likely to return to the same doctors, clinics and facilities for all their healthcare needs</h2>
+
+<p>Happy patients are also highly likely to recommend healthcare companies to friends, family members and co-workers. Doctor-patient relationships may not be easily and/or often recognized, but they are some of the best examples of customer loyalty in any industry and the strongest doctor-patient relationships start with customer service. The reputation your company develops for excellent or poor customer service will be critical in determining whether potential patents seek your services in the future.</p>
+
+<h1>Bad data can lead to life-threatening mistakes</h1>
+
+<p>The healthcare industry depends heavily on accurate patient data to make diagnostic and treatment recommendations. Errors, incomplete records and staff’s inability to access needed data can severely impact the quality of care – even potentially leading to life-threatening mistakes and malpractice lawsuits. Customer service systems and processes, and the thoroughness of staff, are the first defense against costly mistakes.</p>
+
+
+
+<h1>Customer service</h1> <b style="font-size: 20px;">poor customer service is an indicator of bigger problems </b>
+<p>performance is often a symptom and indicator of underlying issues within an organization. A company that provides excellent customer service is likely to have robust and refined processes and systems. Companies that provide poor customer service are likely to struggle with process inefficiencies, staff training and data quality. These don’t just impact patient care, they also impact the cost of operations.</p>
+
+<fieldset style="background-color: black; color: white;">
+<h1 style="font-size: 40px;" align="center">best health organizatation</h1>
+<div align="center">
+<img src="my health certificate.png" height="500px" width="1000px";></div>
+<h1 style="font-size: 35px; text-align: center;"> my health has been awarderd for the best health organization by world health organiation(W.H.O)</h1></div>
+</fieldset>
+<h1>Health care is the maintenance or improvement of health</h1>
+ <p>via the prevention, diagnosis, treatment, recovery, or cure of disease, illness, injury, and other physical and mental impairments in people. Health care is delivered by health professionals and allied health fields. Physicians and physician associates are a part of these health professionals. Dentistry, pharmacy, midwifery, nursing, medicine, optometry, audiology, psychology, occupational therapy, physical therapy, athletic training and other health professions are all part of health care. It includes work done in providing primary care, secondary care, and tertiary care, as well as in public health.
+Access to health care may vary across countries, communities, and individuals, influenced by social and economic conditions as well as health policies. Providing health care services means "the timely use of personal health services to achieve the best possible health outcomes". Factors to consider in terms of healthcare access include financial limitations (such as insurance coverage), geographic barriers (such as additional transportation costs, the possibility to take paid time off of work to use such services), and personal limitations (lack of ability to communicate with healthcare providers, poor health literacy, low income). Limitations to health care services affects negatively the use of medical services, the efficacy of treatments, and overall outcome (well-being, mortality rates).</p>
+<br>
+<br>
+<h1>Health care systems are organizations established to meet the health needs of targeted populations.</h1>
+
+ <p>According to the World Health Organization (WHO), a well-functioning health care system requires a financing mechanism, a well-trained and adequately paid workforce, reliable information on which to base decisions and policies, and well maintained health facilities to deliver quality medicines and technologies.
+
+An efficient health care system can contribute to a significant part of a country's economy, development, and industrialization. Health care is conventionally regarded as an important determinant in promoting the general physical and mental health and well-being of people around the world. An example of this was the worldwide eradication of smallpox in 1980, declared by the WHO as the first disease in human history to be completely eliminated by deliberate health care interventions.</p>
+
+
+
+
+
+
+
+
+</html>
